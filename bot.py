@@ -1,7 +1,7 @@
 import telebot
 from weather import WeatherPyOwn
 
-bot = telebot.TeleBot("901291038:AAFRjXLTK8LW0KxyByOlRp-9dCUWJXTRmOk")
+bot = telebot.TeleBot("token_bot__")
 
 
 @bot.message_handler(content_types=['text'])
