@@ -7,8 +7,7 @@ bot = telebot.TeleBot("901291038:AAFRjXLTK8LW0KxyByOlRp-9dCUWJXTRmOk")
 flag_w = False
 
 
-# @bot.message_handler(commands=['start', 'help'])
-@bot.message_handler(content_types=['text'])  # реагирует на текст
+@bot.message_handler(content_types=['text'])
 def send_echo(message):
     global flag_w
     if flag_w:
@@ -21,4 +20,4 @@ def send_echo(message):
         bot.reply_to(message, "Неизвестная команда")
 
 
-bot.polling(none_stop=True)  # завершение бота для повторного опроса
+bot.polling(none_stop=True)

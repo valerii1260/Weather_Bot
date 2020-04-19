@@ -17,7 +17,8 @@ def WeatherPyOwn(place, country):
     d = w.get_reference_time(timeformat='date')
     date_ = d.strftime("%H:%M,%d/%m") + "\n"
 
-    temp_ = "температура " + str(w.get_temperature(unit='celsius')['temp']) + "C" + "\n"  # 'temp', 'temp_max', 'temp_min'
+    temp_ = "температура " + str(
+        w.get_temperature(unit='celsius')['temp']) + "C" + "\n"  # 'temp', 'temp_max', 'temp_min'
     clouds_ = w.get_detailed_status() + "\n"
     wind_ = "ветер " + str(w.get_wind()['speed']) + "м/с" + "\n"
     # w.get_weather_icon_url()
