@@ -1,7 +1,5 @@
 def WeatherPyOwn(place, country):
-    # https://openweathermap.org
-    # name = ggsm1260@gmail.com
-    # password = jqef97145uffF
+
     import pyowm
 
     token_weather = '71b41aedb4b8a3a1904727e656a311ee'
