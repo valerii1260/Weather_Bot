@@ -2,7 +2,7 @@ def WeatherPyOwn(place, country):
 
     import pyowm
 
-    token_weather = '71b41aedb4b8a3a1904727e656a311ee'
+    token_weather = 'token_weather__'
     owm = pyowm.OWM(token_weather, language="ru")
 
     try:
