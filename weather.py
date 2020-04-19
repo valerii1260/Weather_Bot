@@ -1,8 +1,12 @@
 def WeatherPyOwn(place, country):
-
+    # https://openweathermap.org
+    # name = ggsm1260@gmail.com
+    # password = jqef97145uffF
     import pyowm
+    import os
 
-    token_weather = 'token_weather__'
+    token_weather = os.environ.get('token_weather__')
+    # token_weather = '71b41aedb4b8a3a1904727e656a311ee'
     owm = pyowm.OWM(token_weather, language="ru")
 
     try:
