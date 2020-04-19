@@ -3,8 +3,6 @@ from weather import WeatherPyOwn
 import os
 
 bot = telebot.TeleBot(os.environ.get('token_bot__'))
-# bot = telebot.TeleBot("901291038:AAFRjXLTK8LW0KxyByOlRp-9dCUWJXTRmOk")
-
 
 @bot.message_handler(content_types=['text'])
 def send_echo(message):
